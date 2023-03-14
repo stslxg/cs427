@@ -1,0 +1,7 @@
+CUDA编程作业
+
+黄炫圭 5100309715
+
+最终程序为RBFkernel.cu
+RBFkernel_old.cu和RBF_test.cu都是用于测试程序正确性的程序。RBF_test是CPU计算版本，因为不清楚CUDA的exp实现与传统的exp有没有差别，在此处也用到CUDA专门用来计算exp。RBFkernel_old.cu是RBFkernel.cu的小数据版本。这两个程序的数据量：500个向量，每个长度1000。其结果最后会进行diff，以表明程序无误，详见makefile。
+RBFkernel.cu没有输出（因为太耗时间了），数据量为： 5000个向量，每个长度10000。总耗时（包括给数组赋予原始数据）大约10秒。
